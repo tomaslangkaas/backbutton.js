@@ -1,6 +1,14 @@
 # backbutton.js
 small cross-browser hash-based router library for client-side single page apps
 
+## Features
+
+* Tiny (< 1 kb)
+* No dependencies
+* Works in old browsers (tested in MSIE6+, Firefox4+, Safari5+, Opera12+)
+* MIT-licensed
+* Implements location polling and iframe-based history entry to work in IE6-8. Uses onhashchange event in modern browsers. Based on code fragments from the [Backbone History source code](http://backbonejs.org/docs/backbone.html#section-196) and the [jquery hashchange plugin source code](http://benalman.com/projects/jquery-hashchange-plugin/)
+
 ## API
 
 ### backbutton.navigate( fragmentString )
@@ -78,7 +86,7 @@ backbutton.refresh();
 //fragment string '/page/7'
 ```
 
-### backbutton.routes(RegExpRoutesArray [,fallbackListener])
+### backbutton.routes( RegExpRoutesArray [,fallbackListener] )
 
 Sets up route listeners with regular expressions. Regular expressions are executed in order, until first route match. Thus, order matters. If there is no route match, the fallbackListener is called if it is defined.
 
