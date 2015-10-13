@@ -50,6 +50,11 @@ backbutton.observe(function(newFragment){
     routeHandlers['/404']();
   }
 });
+
+//set fragment to '/about', 
+//triggers routeHandlers['/about']()
+backbutton.navigate('/about');
+
 ```
 
 ### backbutton.refresh()
