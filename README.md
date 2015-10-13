@@ -1,11 +1,11 @@
 # backbutton.js
-small cross-browser hash-based router library for single page apps
+small cross-browser hash-based router library for client-side single page apps
 
 ## API
 
 ### backbutton.navigate(fragmentString)
 
-Sets fragment to `fragmentString`. Triggers fragment change if different from previous fragment.
+Sets fragment to `fragmentString`. Creates new item in browser history and triggers fragment change if `fragmentString` is different from previous fragment.
 
 ```javascript
 //if current location is http://path/doc.html
@@ -29,7 +29,7 @@ var frag = backbutton.current();
 
 ### backbutton.observe(fragmentChangeListener)
 
-Registers a listener function. Each call to `backbutton.observe` adds another listener. On fragment change, each listener is called with the new fragment as a single argument. There is currently no method to unregister listeners.
+Registers a listener function. Each call to `backbutton.observe` adds another listener. On fragment change, each listener is called with the new fragment as a single argument.
 
 ```javascript
 //router with static routes
@@ -59,9 +59,9 @@ backbutton.navigate('/about');
 
 ### backbutton.refresh()
 
-Fires all listeners with current fragment. Useful on first page load.
+Fires all listeners with current fragment. For use on page load.
 
-```
+```javascript
 //user navigates directly to http://path/doc.html#/page/7
 //from another page or from browser history,
 //nothing happens until refresh is called
@@ -69,5 +69,31 @@ Fires all listeners with current fragment. Useful on first page load.
 backbutton.refresh();
 
 //now any listeners registered with backbutton.observe
-//or backbutton.routes are called
+//or backbutton.routes have been called
+```
+
+### backbutton.routes(RegExpRoutesArray [,fallbackListener])
+
+### backbutton.back()
+
+Goes back to previous item in browser history. Facade for `window.history.back()`.
+
+```javascript
+//current location is http://path/doc.html#/home
+//navigate to route '/about'
+
+backbutton.navigate('/about');
+
+//current location is http://path/doc.html#/about,
+//any registered backbutton listeners or routes are triggered
+//with the fragment '/about'
+
+//navigate back, same as clicking on
+//back button in browser
+
+backbutton.back();
+
+//current location is now http://path/doc.html#/home again
+//any registered backbutton listeners or routes are triggered
+//with the fragment '/home'
 ```
