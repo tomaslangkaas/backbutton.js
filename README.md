@@ -3,7 +3,7 @@ small cross-browser hash-based router library for client-side single page apps
 
 ## Features
 
-* Enables browser back button and browser history in single page apps
+* Enables navigation with browser back button and browser history in single page apps
 * Tiny (< 1 kb)
 * No dependencies
 * Wide browser coverage (tested in MSIE6+, Firefox4+, Safari5+, Opera12+)
