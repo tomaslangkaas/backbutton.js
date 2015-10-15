@@ -53,6 +53,7 @@ var routeHandlers = {
 };
 
 //register listener for the router
+
 backbutton.observe(function(newFragmentString){
   if(routeHandlers[newFragmentString]){
     //call route handler
@@ -67,8 +68,8 @@ backbutton.observe(function(newFragmentString){
 //listener with the new fragment string '/about', 
 //which in turn triggers
 //routeHandlers['/about']()
-backbutton.navigate('/about');
 
+backbutton.navigate('/about');
 ```
 
 ### backbutton.refresh()
@@ -99,6 +100,7 @@ The `RegExpRoutesArray` argument is an array with alternating regular expression
 
 ```javascript
 //route handlers
+
 var routeHandlers = {
   home: function(){ ... },
   searchPage: function(queryString){ ... },
