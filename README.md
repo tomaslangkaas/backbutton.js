@@ -63,7 +63,7 @@ backbutton.observe(function(newFragmentString){
   }
 });
 
-//set fragment to '/about', triggers the registered
+//setting fragment to '/about' triggers the registered
 //listener with the new fragment string '/about', 
 //which in turn triggers
 //routeHandlers['/about']()
@@ -78,13 +78,14 @@ Fires all listeners with current fragment string. For use on page load.
 ```javascript
 //user navigates directly to http://path/doc.html#/page/7
 //from another page or from browser history,
-//no registered backbutton observers or routes
-//are triggered on page load
+//registered backbutton observers or routes
+//are not triggered on page load, since this
+//is not technically a fragment change
 
 backbutton.refresh();
 
 //now all listeners registered with backbutton.observe
-//or backbutton.routes have been called with the current
+//or backbutton.routes are called with the current
 //fragment string '/page/7'
 ```
 
