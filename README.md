@@ -11,6 +11,10 @@ small cross-browser hash-based router library for client-side single page apps
 * MIT-licensed
 * Implements location polling and iframe-based history entry to work in IE6-8. Uses onhashchange event in modern browsers. Based on code fragments from the [Backbone History source code](http://backbonejs.org/docs/backbone.html#section-196) and the [jquery hashchange plugin source code](http://benalman.com/projects/jquery-hashchange-plugin/)
 
+## Tests
+
+[Run tests online](http://tomaslangkaas.github.io/backbutton.js/tests/run.html)
+
 ## API
 
 ### backbutton.navigate( fragmentString )
