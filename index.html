@@ -121,6 +121,9 @@
                     setTimeout(done, 100);
                 },
                 function() {
+                    setTimeout(function(){
+                        backbutton.navigate('');
+                    }, 100);
                     return backbutton.current() == "users/home";
                 }
             ],
