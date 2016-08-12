@@ -6,10 +6,10 @@ small cross-browser hash-based router library for client-side single page apps
 * Enables browser navigation in single page apps - enables back button use
 * Tiny (< 1 kb)
 * No dependencies
-* Wide browser coverage (tested in MSIE6+, Firefox4+, Safari5+, Opera12+)
+* Wide browser coverage (tested in IE6+, FF3.6+, Chrome 6+, Safari 4+, Mobile Safari 4+, Opera 12+, Android browser 2.2+)
 * Works for local files (file: protocol) and served files (http: protocol)
 * MIT-licensed
-* Implements location polling and iframe-based history entry to work in IE6-8. Uses onhashchange event in modern browsers. Based on code fragments from the [Backbone History source code](http://backbonejs.org/docs/backbone.html#section-196) and the [jquery hashchange plugin source code](http://benalman.com/projects/jquery-hashchange-plugin/)
+* Implements location polling and iframe-based history entry to work in IE6&ndash;8. Uses onhashchange event in modern browsers. Based on code fragments from the [Backbone History source code](http://backbonejs.org/docs/backbone.html#section-196) and the [jquery hashchange plugin source code](http://benalman.com/projects/jquery-hashchange-plugin/)
 
 ## Demo
 
