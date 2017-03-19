@@ -2,7 +2,7 @@
 
 A tiny cross-browser hash-based router library for single page apps
 
-````javascript
+```javascript
 backbutton.routes([
   /^$/, function () {
     /* home page route */
