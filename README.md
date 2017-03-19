@@ -1,6 +1,6 @@
 ![backbutton.js](http://tomaslangkaas.github.io/backbutton.js/assets/backbutton.svg)
 
-tiny cross-browser hash-based router library for single page apps
+A tiny cross-browser hash-based router library for single page apps
 
 ## Features
 
