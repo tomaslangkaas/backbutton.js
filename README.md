@@ -1,6 +1,5 @@
 ![backbutton.js](/assets/backbutton.png)
 
-# backbutton.js
 small cross-browser hash-based router library for client-side single page apps
 
 ## Features
