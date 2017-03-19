@@ -1,3 +1,5 @@
+![backbutton.js](/assets/backbutton.svg)
+
 # backbutton.js
 small cross-browser hash-based router library for client-side single page apps
 
@@ -73,7 +75,7 @@ backbutton.observe(function(newFragmentString){
 });
 
 //setting fragment to '/about' triggers the registered
-//listener with the new fragment string '/about', 
+//listener with the new fragment string '/about',
 //which in turn triggers
 //routeHandlers['/about']()
 
@@ -120,12 +122,12 @@ backbutton.routes([
     //matches '/home' and '/home/'
     /^\/home\/?$/,
     routeHandlers.home,
-    
+
     //matches '/search/*',
     //passes querystring to handler
     /^\/search\/(.*)$/,
     routeHandlers.searchPage,
-    
+
     //matches '/:category/:productId*',
     //where category consist of letters and
     //productId consist of digits
