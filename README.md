@@ -7,6 +7,7 @@ A tiny cross-browser hash-based router library for single page apps
 * Enables browser navigation in single page apps&mdash;enables back button
 * Tiny (< 1 kb), no dependencies
 * Versatile
+  * Allows dynamic routing and parametrized routes (using regular expressions) 
   * Wide browser coverage (tested in IE6+, FF3.6+, Chrome 6+, Safari 4+, Mobile Safari 4+, Opera 12+, Android browser 2.2+)
   * Works for both local files (file: protocol) and served files (http: protocol)
 * MIT-licensed
