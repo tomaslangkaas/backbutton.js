@@ -8,8 +8,8 @@ backbutton.routes([
     /* home page route */
   },
 
-  /^search:(.*)$/, function (querystring) {
-    /* search route */
+  /^search\/(.*)$/, function (querystring) {
+    /* route handler for /search/:query */
   },
 
   /^\/(w+)\/(\d+)\/?$/, function (category, item) {
@@ -19,7 +19,7 @@ backbutton.routes([
   404: function (fragmentPath) {
     /* handle non-existing routes */
   }
-})
+});
 
 ```
 
