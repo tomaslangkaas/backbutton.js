@@ -10,10 +10,6 @@ backbutton.routes([
 
   /^search\/(.*)$/, function (querystring) {
     /* route handler for /search/:query */
-  },
-
-  /^\/(w+)\/(\d+)\/?$/, function (category, item) {
-    /* route handler for /:category/:item */
   }
 ],{
   404: function (fragmentPath) {
