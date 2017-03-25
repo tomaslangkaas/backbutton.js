@@ -12,8 +12,8 @@ backbutton.routes([
     /* route handler for /search/:query */
   }
 ],{
-  404: function (fragmentPath) {
-    /* handle non-existing routes */
+  404: function (pathFragment) {
+    /* route handler for non-existing routes */
   }
 });
 
