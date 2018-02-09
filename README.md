@@ -190,7 +190,7 @@ However, if the route callback returns a truthy value, like `true`, the loop con
 
 If a route callback returns a non-blank string (that is, any string except `""`), subsequent regular expressions are matched against this string instead of `location.hash`, making it possible to do route redirects.
 
-Utilizing these mechanisms, it is quite easy to create quite complex routing behaviour, with routes that checks for specific conditions, routes that only are acessible under specific conditions, and routes that redirect under specific conditions.
+Utilizing these mechanisms, it is quite easy to create quite complex routing behaviour, with routes that checks for specific conditions, routes that are only accessible under specific conditions, and routes that redirect under specific conditions.
 
 See the [source code of the **backbutton.js** tests](https://github.com/tomaslangkaas/backbutton.js/blob/gh-pages/tests/tests.js) for examples of conditional routing in action.
 
