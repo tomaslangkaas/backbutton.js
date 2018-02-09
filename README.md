@@ -21,7 +21,7 @@ Fire up a text editor or somewhere else you can enter and preview some HTML and 
   <a href="#about">About</a>
 </nav>
 <main id="view"></main>
-<script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@1/backbutton.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@1.0.0/backbutton.js"></script>
 <script>
 backbutton.routes([
   /^(services|about)$/, function(path){ // topic page route
