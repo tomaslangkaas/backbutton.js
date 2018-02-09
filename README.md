@@ -87,12 +87,12 @@ backbutton.refresh();
 
 **backbutton.js** has a small, but versatile API:
 
-* `backbutton.version` is a string containing the version number
-* `backbutton.navigate()` sets `location.hash` from code
-* `backbutton.current()` gets the current `location.hash`
+* `backbutton.version` is a string containing the version number.
+* `backbutton.navigate()` sets `location.hash` from code.
+* `backbutton.current()` gets the current `location.hash`.
 * `backbutton.refresh()` notifies all observers that `location.hash` has changed, while it has not. Calling this function does not create any new history entries.
 * `backbutton.observe()` registers observers to monitor changes in `location.hash`.
-* `backbutton.routes()` provides routing with regular expressions and callbacks
+* `backbutton.routes()` provides routing with regular expressions and callbacks.
 
 #### `backbutton.navigate(newHashString)` and `backbutton.current()`
 
