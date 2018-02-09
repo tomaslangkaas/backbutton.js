@@ -8,7 +8,7 @@
 **backbutton.js** allows for fast prototyping with little setup&mdash;achieve much with just a text editor and a local browser  
 **backbutton.js** is open source (MIT licensed), freely use it for any purpose
 
-(\*) *tested in IE6+, FF3.6+, Safari 4+, iOS Safari 4+, Chrome 6+, Opera 12+, run tests online*
+(\*) *tested in IE6+, FF3.6+, Safari 4+, iOS Safari 4+, Chrome 6+, Opera 12+, [run tests online](http://tomaslangkaas.github.io/backbutton.js/)*
 
 ## Quick demonstration
 
@@ -21,7 +21,7 @@ Fire up a text editor or somewhere else you can enter and preview some HTML and 
   <a href="#about">About</a>
 </nav>
 <main id="view"></main>
-<script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@0.1.0/backbutton.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@1/backbutton.js"></script>
 <script>
 backbutton.routes([
   /^(services|about)$/, function(path){ // topic page route
