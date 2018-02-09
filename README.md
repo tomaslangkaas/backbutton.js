@@ -192,7 +192,7 @@ If a route callback returns a non-blank string (that is, any string except `""`)
 
 Utilizing these mechanisms, it is quite easy to create quite complex routing behaviour, with routes that checks for specific conditions, routes that only are acessible under specific conditions, and routes that redirect under specific conditions.
 
-See the source code of the **backbutton.js** tests for examples of conditional routing in action.
+See the [source code of the **backbutton.js** tests](https://github.com/tomaslangkaas/backbutton.js/blob/gh-pages/tests/tests.js) for examples of conditional routing in action.
 
 ##### Change the routing table at runtime
 
@@ -202,4 +202,4 @@ The current routing table array could also be replaced at any time by calling `b
 
 Internally, `backbutton.routes()` creates an observer function that loops through the provided routing table. When `backbutton.routes()` is provided with a routing table array, it returns the prior router, that is, the prior observer function. To reinstate the prior router, call `backbutton.routes` with the prior observer function as the first argument.
 
-See the source code of the **backbutton.js** tests for examples of routing table manipulation at runtime.
+See the [source code of the **backbutton.js** tests](https://github.com/tomaslangkaas/backbutton.js/blob/gh-pages/tests/tests.js) for examples of routing table manipulation at runtime.
