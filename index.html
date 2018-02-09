@@ -5,7 +5,29 @@
   <meta charset="UTF-8">
   <title>backbutton.js tests</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+#results{
+  max-width: 32em;
+  margin: auto;
+}
+
+#results table{
+  border-collapse: collapse;
+}
+
+#results td{
+  padding: 0.5em;
+  border: 1px solid #ddd;
+}
+
+#results td.passed{
+  color: #090;
+}
+
+#results td.failed{
+  color: #900;
+}  
+  </style>
 </head>
 <body>
   <div id="results"></div>
