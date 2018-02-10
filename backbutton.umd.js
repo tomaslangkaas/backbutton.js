@@ -22,7 +22,7 @@
     // public interface
 
     backbuttonObject = ({
-      version: "1.0.0",
+      version: "1.0.1",
 
       observe: function(fn) {
         var i = listeners.length;
