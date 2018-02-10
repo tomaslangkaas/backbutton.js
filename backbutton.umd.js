@@ -11,7 +11,8 @@
   }
 }(this, function () {
 
-  var listeners = [false],
+  var window = this,
+    listeners = [false],
     document = "document",
     location = "location",
     href = "href",
