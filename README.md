@@ -37,6 +37,16 @@ function display(message){
 </script>
 ```
 
+## Setup
+
+Load **backbutton.js** from a local copy:
+```html
+<script src="path/to/JS/backbutton.js"></script>
+```
+or from CDN:
+```html
+<script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@1.0.0/backbutton.js"></script>
+```
 ## How **backbutton.js** works
 
 **backbutton.js** responds to changes in `location.hash`. App navigation is implemented by setting the value of `location.hash`, either from links, like `<a href="#applicationPath>`, or from code, like `backbutton.navigate('applicationPath')`.
