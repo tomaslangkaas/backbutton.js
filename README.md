@@ -12,7 +12,7 @@
 
 ## Quick demonstration
 
-Fire up a text editor or somewhere else you can enter and preview some HTML and JavaScript (like [CodePen](https://codepen.io/), [JS Bin](https://jsbin.com/), [JSFidddle](https://jsfiddle.net/)). Then, copy and paste the following code in an HTML document and preview in a browser:
+Fire up a text editor or somewhere else you can enter and preview some HTML and JavaScript (like [CodePen](https://codepen.io/), [JS Bin](https://jsbin.com/), [JSFidddle](https://jsfiddle.net/)). Then, copy and paste the following code in an HTML document and preview in a browser (or see it [in action here](http://tomaslangkaas.github.io/backbutton.js/quickdemo.html)):
 
 ```html
 <nav>
