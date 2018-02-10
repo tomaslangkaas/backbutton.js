@@ -480,7 +480,7 @@ function run(report) {
             }
         }
         if(results.length + 1 === i){
-            history.go(-21);
+            history.go(-20);
         }
     });
 })();
