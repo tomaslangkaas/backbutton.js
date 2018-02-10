@@ -12,7 +12,7 @@
 
 ## Quick demonstration
 
-Insert the following code in a blank HTML document and preview in a browser (or see it [in action here](http://tomaslangkaas.github.io/backbutton.js/quickdemo.html)):
+Insert the following code in an HTML document and preview in a browser (or see it [in action here](http://tomaslangkaas.github.io/backbutton.js/quickdemo.html)):
 
 ```html
 <nav>
