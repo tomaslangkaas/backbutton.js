@@ -1,6 +1,6 @@
 {
   "name": "backbutton.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small, robust and versatile JavaScript router for single page apps",
   "main": "backbutton.umd.js",
   "directories": {
