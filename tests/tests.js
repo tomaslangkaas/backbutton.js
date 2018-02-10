@@ -472,7 +472,7 @@ function run(report) {
 
 (function runTests(){
     run(function(results){
-        var i, unobserve;
+        var i;
         showResults(results);
         for(i = 1; i < results.length; i += 2){
             if(results[i] !== 'passed'){
