@@ -10,7 +10,7 @@
     // public interface
 
     backbuttonObject = (window["backbutton"] = {
-      version: "1.0.1",
+      version: "1.0.2",
 
       observe: function(fn) {
         var i = listeners.length;
