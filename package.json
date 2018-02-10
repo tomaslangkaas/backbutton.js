@@ -1,0 +1,27 @@
+{
+  "name": "backbutton.js",
+  "version": "1.0.0",
+  "description": "Small, robust and versatile JavaScript router for single page apps",
+  "main": "backbutton.umd.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaslangkaas/backbutton.js.git"
+  },
+  "keywords": [
+    "client-side",
+    "routing",
+    "SPA"
+  ],
+  "author": "Tomas Langkaas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomaslangkaas/backbutton.js/issues"
+  },
+  "homepage": "https://github.com/tomaslangkaas/backbutton.js#readme"
+}
