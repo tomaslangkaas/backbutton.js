@@ -446,7 +446,7 @@ function test(name, fun) {
   tests.push(name, fun);
 }
 
-function runTests(report) {
+function run(report) {
   var tests = (window["tests"] = window["tests"] || []);
   var results = [];
   var index = -2;
@@ -468,6 +468,23 @@ function runTests(report) {
   next();
 }
 
+/* test control */
+
+(function runTests(){
+    run(function(results){
+        var i, unobserve;
+        showResults(results);
+        for(i = 1; i < results.length; i += 2){
+            if(results[i] !== 'passed'){
+                break;
+            }
+        }
+        if(results.length + 1 === i){
+            history.go(-21);
+        }
+    });
+})();
+
 function showResults(results) {
   var str =
     "<p><cite>backbutton.js</cite>, version " + backbutton.version + "</p>";
@@ -488,5 +505,3 @@ function showResults(results) {
   document.getElementById("results").innerHTML =
     "<h1>Test results (" + p + "/" + (i >> 1) + ")</h1>" + str;
 }
-
-runTests(showResults);
