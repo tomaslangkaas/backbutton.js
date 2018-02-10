@@ -23,17 +23,17 @@ Insert the following code in a blank HTML document and preview in a browser (or 
 <main id="view"></main>
 <script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@1.0.0/backbutton.js"></script>
 <script>
-backbutton.routes([
-  /^(services|about)$/, function(path){ // topic page route
-    display('This is the ' + path + ' page.')
-  },
-  /.*/, function(){ // route anything else to the home page
-    display('This is the home page');
+  backbutton.routes([
+    /^(services|about)$/, function(path){ // topic page route
+      display('This is the ' + path + ' page.')
+    },
+    /.*/, function(){ // route anything else to the home page
+      display('This is the home page');
+    }
+  ]);
+  function display(message){
+    document.getElementById('view').innerHTML = message;
   }
-]);
-function display(message){
-  document.getElementById('view').innerHTML = message;
-}
 </script>
 ```
 
