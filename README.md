@@ -24,13 +24,21 @@ Insert the following code in an HTML document and preview in a browser (or see i
 <script src="https://cdn.jsdelivr.net/gh/tomaslangkaas/backbutton.js@1.0.2/backbutton.js"></script>
 <script>
   backbutton.routes([
-    /^(services|about)$/, function(path){ // topic page route
+  
+    // topic page route
+  
+    /^(services|about)$/, function(path){
       display('This is the ' + path + ' page.')
     },
-    /.*/, function(){ // route anything else to the home page
+  
+    // route anything else to the home page
+  
+    /.*/, function(){
       display('This is the home page');
     }
+  
   ]);
+  
   function display(message){
     document.getElementById('view').innerHTML = message;
   }
